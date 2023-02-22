@@ -9,19 +9,6 @@ struct Animation {
     
     let animationName: String
     let curveName: String
-    let force: Double
-    let duration: Double
-    let delay: Double
-    
-    var description: String {
-        """
-preset: \(animationName)
-curve: \(curveName)
-force: \(force)
-duration: \(duration)
-delay: \(delay)
-"""
-    }
     
     static func getAnimation() -> [Animation] {
         
@@ -35,10 +22,7 @@ delay: \(delay)
             animations.append(
                 Animation(
                     animationName: dataStore.animations[index].rawValue,
-                    curveName: dataStore.curves[index].rawValue,
-                    force: Double.random(in: 1...1.5),
-                    duration: Double.random(in: 2...4),
-                    delay: 0.5
+                    curveName: dataStore.curves[index].rawValue
                 )
             )
         }
