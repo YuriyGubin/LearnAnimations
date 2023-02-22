@@ -23,8 +23,8 @@ class AnimationViewController: UIViewController {
 
     @IBAction func runAnimationButton(_ sender: UIButton) {
         
-        animationVeiw.animation = animation.animationName
-        animationVeiw.curve = animation.curveName
+        animationVeiw.animation = animation.name
+        animationVeiw.curve = animation.curve
         animationVeiw.force = animation.force
         animationVeiw.duration = animation.duration
         animationVeiw.delay = animation.delay
@@ -33,7 +33,7 @@ class AnimationViewController: UIViewController {
         
         animation = Animation.getAnimation()
     
-        sender.setTitle("Run \(animation.animationName)", for: .normal)
+        sender.setTitle("Run \(animation.name)", for: .normal)
     }
 }
 
