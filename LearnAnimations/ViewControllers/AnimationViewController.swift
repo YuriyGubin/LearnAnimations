@@ -10,7 +10,6 @@ import SpringAnimation
 
 class AnimationViewController: UIViewController {
     
-    
     @IBOutlet var animationVeiw: SpringView!
     @IBOutlet var animationInfoLabel: UILabel!
     
@@ -22,7 +21,6 @@ class AnimationViewController: UIViewController {
         animationInfoLabel.text = animation.description
     }
 
-   
     @IBAction func runAnimationButton(_ sender: UIButton) {
         
         animationVeiw.animation = animation.animationName
@@ -37,7 +35,5 @@ class AnimationViewController: UIViewController {
     
         sender.setTitle("Run \(animation.animationName)", for: .normal)
     }
-
-    
 }
 
