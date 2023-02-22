@@ -22,6 +22,7 @@ class AnimationViewController: UIViewController {
     }
 
     @IBAction func runAnimationButton(_ sender: UIButton) {
+        animationInfoLabel.text = animation.description
         
         animationVeiw.animation = animation.name
         animationVeiw.curve = animation.curve
@@ -29,7 +30,6 @@ class AnimationViewController: UIViewController {
         animationVeiw.duration = animation.duration
         animationVeiw.delay = animation.delay
         animationVeiw.animate()
-        animationInfoLabel.text = animation.description
         
         animation = Animation.getAnimation()
     
