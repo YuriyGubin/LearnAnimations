@@ -62,9 +62,9 @@
 		6AFFF05D29A534EE00A0864B /* LearnAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				6AFFF07529A5F8B500A0864B /* App */,
 				6AFFF07929A5F8F900A0864B /* Services */,
 				6AFFF07829A5F8F100A0864B /* Models */,
-				6AFFF07529A5F8B500A0864B /* App */,
 				6AFFF07629A5F8D300A0864B /* ViewControllers */,
 				6AFFF07729A5F8DF00A0864B /* Storyboards */,
 				6AFFF06729A534F000A0864B /* Assets.xcassets */,

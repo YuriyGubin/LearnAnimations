@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fl-oY-1wJ" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="75" y="159" width="243" height="200"/>
+                                <rect key="frame" x="75" y="159" width="243" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-jp-vMU">
-                                        <rect key="frame" x="8" y="40" width="227" height="20.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-jp-vMU">
+                                        <rect key="frame" x="20" y="20" width="203" height="100"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -28,9 +28,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="leading" secondItem="8fl-oY-1wJ" secondAttribute="leading" constant="8" id="Pac-I1-BmU"/>
-                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="top" secondItem="8fl-oY-1wJ" secondAttribute="top" constant="40" id="cgg-dU-8Nx"/>
-                                    <constraint firstAttribute="trailing" secondItem="VK1-jp-vMU" secondAttribute="trailing" constant="8" id="jav-Bd-t91"/>
+                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="leading" secondItem="8fl-oY-1wJ" secondAttribute="leading" constant="20" id="Pac-I1-BmU"/>
+                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="top" secondItem="8fl-oY-1wJ" secondAttribute="top" constant="20" id="cgg-dU-8Nx"/>
+                                    <constraint firstAttribute="trailing" secondItem="VK1-jp-vMU" secondAttribute="trailing" constant="20" id="jav-Bd-t91"/>
+                                    <constraint firstAttribute="bottom" secondItem="VK1-jp-vMU" secondAttribute="bottom" constant="20" id="uXJ-jN-dCH"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-yq-J0P">
@@ -54,7 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8fl-oY-1wJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.234742" id="1Z1-C8-NXF"/>
+                            <constraint firstItem="8fl-oY-1wJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.164319" id="3Md-o2-FZq"/>
                             <constraint firstItem="ri8-yq-J0P" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.9" id="Xoc-6D-PLw"/>
                             <constraint firstItem="ri8-yq-J0P" firstAttribute="width" secondItem="8fl-oY-1wJ" secondAttribute="width" id="YuX-gh-2aT"/>
                             <constraint firstItem="ri8-yq-J0P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOg-TX-syp"/>
