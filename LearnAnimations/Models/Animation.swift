@@ -9,24 +9,32 @@ struct Animation {
     
     let animationName: String
     let curveName: String
+    let force: Double
+    let duration: Double
+    let delay: Double
     
-    static func getAnimation() -> [Animation] {
+    var description: String {
+        """
+state: \(animationName)
+curve: \(curveName)
+force: \(String(format: "%.2f", force))
+duration: \(String(format: "%.2f", duration))
+delay: \(String(format: "%.2f", delay))
+"""
+    }
+    
+    static func getAnimation() -> Animation {
         
         let dataStore = DataStore.shared
         
-        var animations: [Animation] = []
+        let animation = Animation(
+            animationName: dataStore.animations.randomElement()?.rawValue ?? "pop",
+            curveName: dataStore.curves.randomElement()?.rawValue ?? "easeIn",
+            force: Double.random(in: 1...1.5),
+            duration: Double.random(in: 0.5...1),
+            delay: 0.3
+        )
         
-        let count = min(dataStore.animations.count, dataStore.curves.count)
-        
-        for index in 0..<count {
-            animations.append(
-                Animation(
-                    animationName: dataStore.animations[index].rawValue,
-                    curveName: dataStore.curves[index].rawValue
-                )
-            )
-        }
-        
-        return animations
+        return animation
     }
 }

@@ -14,42 +14,30 @@ class AnimationViewController: UIViewController {
     @IBOutlet var animationVeiw: SpringView!
     @IBOutlet var animationInfoLabel: UILabel!
     
-    private var animations = Animation.getAnimation()
+    private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         animationVeiw.layer.cornerRadius = 10
+        animationInfoLabel.text = animation.description
     }
 
    
     @IBAction func runAnimationButton(_ sender: UIButton) {
-        let animationRandomIndex = Int.random(in: 0..<animations.count)
-        let curveRandomIndex = Int.random(in: 0..<animations.count)
-        let force = Double.random(in: 1...1.5)
-        let duration = Double.random(in: 0.5...1.2)
-        let delay = 0.3
         
-        let animation = animations[animationRandomIndex].animationName
-        let curve = animations[curveRandomIndex].curveName
-        
-        sender.setTitle("Run \(animation)", for: .normal)
-        animationVeiw.animation = animation
-        animationVeiw.curve = curve
-        animationVeiw.force = force
-        animationVeiw.duration = duration
-        animationVeiw.delay = delay
+        animationVeiw.animation = animation.animationName
+        animationVeiw.curve = animation.curveName
+        animationVeiw.force = animation.force
+        animationVeiw.duration = animation.duration
+        animationVeiw.delay = animation.delay
         animationVeiw.animate()
+        animationInfoLabel.text = animation.description
         
-        animationInfoLabel.text = """
-preset: \(animation)
-curve: \(curve)
-force: \(String(format: "%.2f", force))
-duration: \(String(format: "%.2f", duration))
-delay: \(String(format: "%.2f", delay))
-"""
+        animation = Animation.getAnimation()
+    
+        sender.setTitle("Run \(animation.animationName)", for: .normal)
     }
-    
-    
+
     
 }
 
