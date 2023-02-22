@@ -20,8 +20,8 @@
                                 <rect key="frame" x="75" y="159" width="243" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-jp-vMU">
-                                        <rect key="frame" x="8" y="7.9999999999999982" width="227" height="25.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                        <rect key="frame" x="8" y="40" width="227" height="20.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -29,14 +29,14 @@
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstItem="VK1-jp-vMU" firstAttribute="leading" secondItem="8fl-oY-1wJ" secondAttribute="leading" constant="8" id="Pac-I1-BmU"/>
-                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="top" secondItem="8fl-oY-1wJ" secondAttribute="top" constant="8" id="cgg-dU-8Nx"/>
+                                    <constraint firstItem="VK1-jp-vMU" firstAttribute="top" secondItem="8fl-oY-1wJ" secondAttribute="top" constant="40" id="cgg-dU-8Nx"/>
                                     <constraint firstAttribute="trailing" secondItem="VK1-jp-vMU" secondAttribute="trailing" constant="8" id="jav-Bd-t91"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-yq-J0P">
-                                <rect key="frame" x="75" y="692.33333333333337" width="243" height="44"/>
+                                <rect key="frame" x="75" y="700.33333333333337" width="243" height="36"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Run">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -47,7 +47,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runAnimationButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pu-Nt-IEY"/>
+                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiH-gw-BzK"/>
                                 </connections>
                             </button>
                         </subviews>
